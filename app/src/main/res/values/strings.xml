@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">快付宝</string>
+    <string name="zhu_ye">主页</string>
+    <string name="che_liang">会员</string>
+    <string name="qian_bao">统计</string>
+    <string name="she_zhi">我的</string>
 </resources>

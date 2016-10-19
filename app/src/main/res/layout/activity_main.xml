@@ -1,17 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.qinfen.MainActivity">
+    android:background="#f3f3f3"
+    android:baselineAligned="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_VP"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:id="@+id/home_radiogroup"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/main_bg"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:weightSum="4">
+
+
+        <RadioButton
+            android:id="@+id/zhuye_rbt"
+            style="@style/mainRadioButton"
+            android:drawableTop="@drawable/bank"
+            android:checked="true"
+            android:text="@string/zhu_ye" />
+
+        <RadioButton
+            android:id="@+id/cheliang_rbt"
+            android:drawableTop="@drawable/customers"
+            style="@style/mainRadioButton"
+            android:text="@string/che_liang" />
+
+        <RadioButton
+            android:id="@+id/qianbao_rbt"
+            style="@style/mainRadioButton"
+            android:drawableTop="@drawable/archives"
+            android:text="@string/qian_bao" />
+
+        <RadioButton
+            android:id="@+id/shezhi_rbt"
+            style="@style/mainRadioButton"
+            android:drawableTop="@drawable/user"
+            android:text="@string/she_zhi" />
+    </RadioGroup>
+</LinearLayout>

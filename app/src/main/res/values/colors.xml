@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#fdfdfe</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#00bb9c</color>
+
+    <!--标题字体色-->
+    <color name="title_text">#666666</color>
+    <!-- 主界面  底色 -->
+    <color name="main_bg">#F6F6F6</color>
 </resources>
