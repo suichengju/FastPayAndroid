@@ -1,4 +1,4 @@
-package com.example.qinfen.MainActivity.ui;
+package com.example.qinfen.MainActivity.ui.fragment;
 
 
 import com.example.qinfen.MainActivity.base.BaseFragment;

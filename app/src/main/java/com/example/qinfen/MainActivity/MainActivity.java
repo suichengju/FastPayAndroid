@@ -1,5 +1,7 @@
 package com.example.qinfen.MainActivity;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -11,10 +13,16 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.qinfen.MainActivity.base.BaseActivity;
-import com.example.qinfen.MainActivity.ui.SetingFragMent;
-import com.example.qinfen.MainActivity.utils.permissions.PermissionsManager;
-import com.example.qinfen.MainActivity.utils.permissions.PermissionsResultAction;
+import com.example.qinfen.MainActivity.config.FastPayConstant;
+import com.example.qinfen.MainActivity.config.ParkApplication;
+import com.example.qinfen.MainActivity.ui.LoginActivity;
+import com.example.qinfen.MainActivity.ui.fragment.MainFragMent;
+import com.example.qinfen.MainActivity.ui.fragment.SetingFragMent;
 import com.example.qinfen.R;
+import com.goodsrc.qynglibrary.utils.MTextUtils;
+import com.goodsrc.qynglibrary.utils.ToastUtil;
+import com.goodsrc.qynglibrary.utils.permissions.PermissionsManager;
+import com.goodsrc.qynglibrary.utils.permissions.PermissionsResultAction;
 
 import java.util.ArrayList;
 
@@ -29,8 +37,23 @@ public class MainActivity extends BaseActivity {
     private int mPosition;
 
     @Override
-    protected int getContentResid() {
-        return R.layout.activity_main;
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        ParkApplication.init(getApplication());
+        initmainset();
+    }
+
+    private void initmainset() {
+        setTitle("主页");
+        setIvAddVisible(true);
+        setIvAddImage(R.drawable.top_qr_code_selector);
+        setRightListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ToastUtil.showShort("在下还没干到这里呢");
+            }
+        });
     }
 
     @Override
@@ -47,8 +70,9 @@ public class MainActivity extends BaseActivity {
 
             }
         });
+        setBackEnable(false);
         fragments = new ArrayList<>();
-        fragments.add(new SetingFragMent());
+        fragments.add(new MainFragMent());
         fragments.add(new SetingFragMent());
         fragments.add(new SetingFragMent());
         fragments.add(new SetingFragMent());
@@ -77,24 +101,22 @@ public class MainActivity extends BaseActivity {
         home_radiogroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-//                if (MTextUtils.isEmpty(ParkApplication.getToken())) {//判断是否登陆
-//                    int indexOfChild = group.indexOfChild(group.findViewById(checkedId));
-//                    if (indexOfChild != 0) {
-//                        setRadioGroup();
-//                        Intent i = new Intent(MainActivity.this, LoginActivity.class);
-//                        startActivityForResult(i, ParkConstant.FIRSTLOGIN);
-//                    }
-//                } else {
+                if (MTextUtils.isEmpty(ParkApplication.getToken())) {//判断是否登陆
+                    int indexOfChild = group.indexOfChild(group.findViewById(checkedId));
+                    if (indexOfChild != 0) {
+                        setRadioGroup();
+                        Intent i = new Intent(MainActivity.this, LoginActivity.class);
+                        startActivityForResult(i, FastPayConstant.IS_LOGIN);
+                    }
+                } else {
                 int indexOfChild = group.indexOfChild(group.findViewById(checkedId));
                 main_VP.setCurrentItem(indexOfChild, true);
-//                }
+                }
             }
         });
         main_VP.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-
             }
 
             @Override
@@ -103,17 +125,19 @@ public class MainActivity extends BaseActivity {
                 mPosition = position;
                 switch (position) {
                     case 0:
-                        setTitle("停车场");
+                        initmainset();
                         break;
                     case 1:
-                        setTitle("我的车辆");
+                        setTitle("会员");
+                        setIvAddVisible(false);
                         break;
                     case 2:
-                        setTitle("我的钱包");
+                        setTitle("统计");
+                        setIvAddVisible(false);
                         break;
                     case 3:
-                        setTitle("设置");
-
+                        setTitle("我的");
+                        setIvAddVisible(false);
                         break;
                 }
             }

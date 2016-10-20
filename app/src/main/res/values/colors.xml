@@ -8,4 +8,7 @@
     <color name="title_text">#666666</color>
     <!-- 主界面  底色 -->
     <color name="main_bg">#F6F6F6</color>
+    <color name="line">#d9d9d9</color>
+    <!--主题色-->
+    <color name="maincolor">#f03221</color>
 </resources>

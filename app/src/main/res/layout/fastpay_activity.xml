@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/qiqiu" />
+
+
+    <com.example.qinfen.MainActivity.widget.ClearEditText
+        android:id="@+id/money_et"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/num_shape"
+        android:gravity="center"
+        android:hint="请输入消费金额"
+        android:inputType="numberDecimal"
+        android:textColor="#efc704"
+        android:textColorHint="@color/red" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="350dp">
+
+        <Button
+            android:id="@+id/vippay_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textColor="@color/red"
+            android:text="会员结账" />
+
+        <Button
+            android:id="@+id/pay_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textColor="@color/red"
+            android:text="散客结账" />
+    </LinearLayout>
+</FrameLayout>

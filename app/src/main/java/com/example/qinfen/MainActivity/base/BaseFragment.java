@@ -33,6 +33,7 @@ public abstract class BaseFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         init(view);
         loadDatas();
+        initset();
     }
 
 
@@ -42,6 +43,13 @@ public abstract class BaseFragment extends Fragment {
      * @param view
      */
     protected void init(View view) {
+
+    }
+
+    /**
+     * 初始化方法=
+     */
+    protected void initset() {
 
     }
 
