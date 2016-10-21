@@ -36,4 +36,68 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:background">@color/line</item>
     </style>
+
+    <!-- "设置"布局    条形选择框左侧 -->
+    <style name="me_left_text_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- "设置"布局    条形选择框右侧 -->
+    <style name="me_right_text_icon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:drawableRight">@drawable/right</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="vertical_line_interval">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">#F0EFF5</item>
+    </style>
+
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:textColor">@color/text_btn_selector</item>
+        <item name="android:background">@drawable/btn_selector</item>
+    </style>
+
+    <!-- "系统设置"布局    条形选择框右侧 -->
+    <style name="system_right_text_icon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:drawableRight">@drawable/icon_next</item>
+    </style>
+
+    <!-- "系统设置"布局    条形选择框左侧 -->
+    <style name="system_left_text_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
 </resources>

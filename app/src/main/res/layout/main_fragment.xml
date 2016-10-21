@@ -28,15 +28,17 @@
 
     <View
         style="@style/line_horizontal"
-        android:layout_height="2dp" />
+        android:layout_height="0.5dp" />
 
     <GridView
         android:id="@+id/gv_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/line"
-        android:horizontalSpacing="1dp"
+        android:horizontalSpacing="0.5dp"
         android:numColumns="3"
-        android:verticalSpacing="1dp" />
+        android:verticalSpacing="0.5dp" />
+
+
 
 </LinearLayout>

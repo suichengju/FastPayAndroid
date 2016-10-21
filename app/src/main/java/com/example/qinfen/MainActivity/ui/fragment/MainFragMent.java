@@ -8,8 +8,12 @@ import android.widget.GridView;
 import android.widget.SimpleAdapter;
 
 import com.example.qinfen.MainActivity.base.BaseFragment;
+import com.example.qinfen.MainActivity.config.FastPayConstant;
+import com.example.qinfen.MainActivity.config.ParkApplication;
 import com.example.qinfen.MainActivity.ui.FastPayActivity;
+import com.example.qinfen.MainActivity.ui.LoginActivity;
 import com.example.qinfen.R;
+import com.goodsrc.qynglibrary.utils.MTextUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -68,13 +72,18 @@ public class MainFragMent extends BaseFragment {
         gvMain.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String titlename = iconName[position];
-                if (position == 0) {//快速消费
-                    Intent intent = new Intent(getContext(), FastPayActivity.class);
-                    intent.putExtra("title", titlename);
-                    startActivity(intent);
-                } else if (position == 1) {
+                if (MTextUtils.isEmpty(ParkApplication.getToken())) {//判断是否登陆
+                    Intent i = new Intent(getContext(), LoginActivity.class);
+                    startActivityForResult(i, FastPayConstant.IS_LOGIN);
+                } else {
+                    String titlename = iconName[position];
+                    if (position == 0) {//快速消费
+                        Intent intent = new Intent(getContext(), FastPayActivity.class);
+                        intent.putExtra("title", titlename);
+                        startActivity(intent);
+                    } else if (position == 1) {
 
+                    }
                 }
             }
         });

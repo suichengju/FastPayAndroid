@@ -34,7 +34,7 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     protected void init() {
-        setTitle("IM初始化页面");
+        setTitle("登录");
         ParkApplication.init(getApplication());
         PermissionsManager.getInstance().requestAllManifestPermissionsIfNecessary(this, new PermissionsResultAction() {
             @Override

@@ -18,6 +18,8 @@ import com.example.qinfen.MainActivity.config.ParkApplication;
 import com.example.qinfen.MainActivity.ui.LoginActivity;
 import com.example.qinfen.MainActivity.ui.fragment.MainFragMent;
 import com.example.qinfen.MainActivity.ui.fragment.SetingFragMent;
+import com.example.qinfen.MainActivity.ui.fragment.StatisticsFragMent;
+import com.example.qinfen.MainActivity.ui.fragment.VipUserFragMent;
 import com.example.qinfen.R;
 import com.goodsrc.qynglibrary.utils.MTextUtils;
 import com.goodsrc.qynglibrary.utils.ToastUtil;
@@ -73,8 +75,8 @@ public class MainActivity extends BaseActivity {
         setBackEnable(false);
         fragments = new ArrayList<>();
         fragments.add(new MainFragMent());
-        fragments.add(new SetingFragMent());
-        fragments.add(new SetingFragMent());
+        fragments.add(new VipUserFragMent());
+        fragments.add(new StatisticsFragMent());
         fragments.add(new SetingFragMent());
         zhuye_rbt = (RadioButton) findViewById(R.id.zhuye_rbt);
         cheliang_rbt = (RadioButton) findViewById(R.id.cheliang_rbt);
@@ -109,8 +111,8 @@ public class MainActivity extends BaseActivity {
                         startActivityForResult(i, FastPayConstant.IS_LOGIN);
                     }
                 } else {
-                int indexOfChild = group.indexOfChild(group.findViewById(checkedId));
-                main_VP.setCurrentItem(indexOfChild, true);
+                    int indexOfChild = group.indexOfChild(group.findViewById(checkedId));
+                    main_VP.setCurrentItem(indexOfChild, true);
                 }
             }
         });
@@ -128,7 +130,7 @@ public class MainActivity extends BaseActivity {
                         initmainset();
                         break;
                     case 1:
-                        setTitle("会员");
+                        setTitle("会员管理");
                         setIvAddVisible(false);
                         break;
                     case 2:
@@ -136,7 +138,7 @@ public class MainActivity extends BaseActivity {
                         setIvAddVisible(false);
                         break;
                     case 3:
-                        setTitle("我的");
+                        setTitle("我");
                         setIvAddVisible(false);
                         break;
                 }

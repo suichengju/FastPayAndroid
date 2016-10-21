@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../QyngIM.iml" filepath="$PROJECT_DIR$/../QyngIM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../qyngIM/qyngIM.iml" filepath="$PROJECT_DIR$/../qyngIM/qyngIM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qyngLibrary.iml" filepath="$PROJECT_DIR$/qyngLibrary.iml" />
+    </modules>
+  </component>
+</project>
