@@ -16,6 +16,7 @@ import com.example.qinfen.MainActivity.base.BaseActivity;
 import com.example.qinfen.MainActivity.config.FastPayConstant;
 import com.example.qinfen.MainActivity.config.ParkApplication;
 import com.example.qinfen.MainActivity.ui.LoginActivity;
+import com.example.qinfen.MainActivity.ui.SearchActivity;
 import com.example.qinfen.MainActivity.ui.fragment.MainFragMent;
 import com.example.qinfen.MainActivity.ui.fragment.SetingFragMent;
 import com.example.qinfen.MainActivity.ui.fragment.StatisticsFragMent;
@@ -31,6 +32,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends BaseActivity {
 
+    private MainActivity me;
     private ArrayList<Fragment> fragments;
     private RadioButton zhuye_rbt, cheliang_rbt, qianbao_rbt, shezhi_rbt;
     private ViewPager main_VP;
@@ -43,6 +45,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ParkApplication.init(getApplication());
+        me = this;
         initmainset();
     }
 
@@ -131,7 +134,15 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 1:
                         setTitle("会员管理");
-                        setIvAddVisible(false);
+                        setIvAddVisible(true);
+                        setIvAddImage(R.drawable.search_selector);
+                        setRightListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent intent = new Intent(me, SearchActivity.class);
+                                startActivity(intent);
+                            }
+                        });
                         break;
                     case 2:
                         setTitle("统计");

@@ -1,14 +1,22 @@
 package com.example.qinfen.MainActivity.ui.fragment;
 
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.qinfen.MainActivity.base.AbsBaseAdapter;
 import com.example.qinfen.MainActivity.base.BaseFragment;
+import com.example.qinfen.MainActivity.config.FastPayConfig;
+import com.example.qinfen.MainActivity.ui.VipUsetDetailsActivity;
+import com.example.qinfen.MainActivity.utils.LayoutAniMationUtils;
 import com.example.qinfen.MainActivity.widget.NiceSpinner.NiceSpinner;
 import com.example.qinfen.R;
+import com.goodsrc.qynglibrary.http.HttpManager;
+
+import org.xutils.http.HttpMethod;
+import org.xutils.http.RequestParams;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -72,6 +80,13 @@ public class VipUserFragMent extends BaseFragment {
                 paiXuSP.setTag("等级");
             }
         });
+        vipUserLv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getContext(), VipUsetDetailsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -87,6 +102,13 @@ public class VipUserFragMent extends BaseFragment {
             }
         };
         adapter.setDatas(dates);
+        vipUserLv.setLayoutAnimation(new LayoutAniMationUtils().getAnimationController());
         vipUserLv.setAdapter(adapter);
+        String url = FastPayConfig.VIPMANGER.VIPMANGER_USER;
+        HttpManager httpManager = new HttpManager.Builder().setHttpMethod(HttpMethod.POST).build();
+        RequestParams params = httpManager.params(url);
+
     }
+
+
 }

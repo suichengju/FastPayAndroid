@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/dimgrey"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="会员信息"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    style="@style/vipcontent_left_text_icon"
+                    android:text="会员卡号:" />
+
+                <TextView
+                    style="@style/vipcontent_right_text_icon"
+                    android:text="1111111" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/vipcontent_right_text_icon"
+                    android:background="@drawable/ok__selector"
+                    android:text="会员默认等级" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    style="@style/vipcontent_left_text_icon"
+                    android:text="会员姓名:" />
+
+                <TextView
+                    style="@style/vipcontent_right_text_icon"
+                    android:text="fffff" />
+
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    style="@style/vipcontent_left_text_icon"
+                    android:text="手机号:" />
+
+                <TextView
+                    style="@style/vipcontent_right_text_icon"
+                    android:text="未设置"
+                    android:textColor="@color/dodgerblue" />
+
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    style="@style/vipcontent_left_text_icon"
+                    android:text="交易后余额:" />
+
+                <TextView
+                    style="@style/vipcontent_right_text_icon"
+                    android:text="Ұ0.00" />
+
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    style="@style/vipcontent_left_text_icon"
+                    android:text="交易后积分:" />
+
+                <TextView
+                    style="@style/vipcontent_right_text_icon"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/dimgrey"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="订单信息"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    style="@style/vipcontent_left_text_icon"
+                    android:text="单号:" />
+
+                <TextView
+                    style="@style/vipcontent_right_text_icon"
+                    android:text="161014091704100100001" />
+
+                <TextView
+                    style="@style/vipcontent_right_text_icon"
+                    android:text="复制单号"
+                    android:textColor="@color/dodgerblue" />
+
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    style="@style/vipcontent_left_text_icon"
+                    android:text="操作时间:" />
+
+                <TextView
+                    style="@style/vipcontent_right_text_icon"
+                    android:text="2016-10-14 09：17：17" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    style="@style/vipcontent_left_text_icon"
+                    android:text="门店:" />
+
+                <TextView
+                    style="@style/vipcontent_right_text_icon"
+                    android:text="默认门店" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    style="@style/vipcontent_left_text_icon"
+                    android:text="操作员:" />
+
+                <TextView
+                    style="@style/vipcontent_right_text_icon"
+                    android:text="jiajian" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/dimgrey"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="支付方式"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    style="@style/vipcontent_left_text_icon"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="账单Ұ100.00（折后Ұ100.00）" />
+
+                <TextView
+                    style="@style/vipcontent_right_text_icon"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="right|center_vertical"
+                    android:text="收款Ұ100.00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    style="@style/vipcontent_left_text_icon"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="现金：" />
+
+                <TextView
+                    style="@style/vipcontent_right_text_icon"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:gravity="right|center_vertical"
+                    android:text="Ұ100.00" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

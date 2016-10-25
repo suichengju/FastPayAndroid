@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="卡号" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="306477646"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="店铺" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="默认店铺"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="等级" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="会员默认等级"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="手机号" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="18865537302"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="姓名" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="勤奋的举举"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="性别" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="男"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="押金（元）" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="70.00"
+                    android:textColor="@color/red"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="剩余积分" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="0"
+                    android:textColor="@color/red"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/vertical_line_interval" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="生日" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="1976.06.30"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="证件号码" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="默认店铺"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="区域" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="山东省烟台市芝罘区"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="地址" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="港城东大街"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="QQ" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="306677666"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="微信号" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="默默无为"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="邮箱" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="未设置"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="工作单位" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="未设置"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="推荐人卡号" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="无"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/vertical_line_interval" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/white_selector">
+
+                <TextView
+                    style="@style/me_left_text_icon"
+                    android:text="会员状态" />
+
+                <TextView
+                    style="@style/vip_right_text_icon"
+                    android:gravity="center_vertical|right"
+                    android:text="正常"
+                    android:textColor="@color/red"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View style="@style/vertical_line_interval" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View style="@style/line_horizontal" />
+
+    <LinearLayout
+        android:background="@color/main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/ok__selector"
+            android:gravity="center"
+            android:text="重置密码"
+            android:textColor="@color/bg_textselector_delete"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_nodelete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/ok__selector"
+            android:gravity="center"
+            android:text="换卡"
+            android:textColor="@color/bg_textselector_delete"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/ok__selector"
+            android:gravity="center"
+            android:text="锁定"
+            android:textColor="@color/bg_textselector_delete"
+            android:textSize="13sp" />
+    </LinearLayout>
+</LinearLayout>

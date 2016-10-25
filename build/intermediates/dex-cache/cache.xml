@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_df9c559670adcf7ea372e38cb5de92acfed78d8e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_ce70f948d371d74c6154bfd0b06a3e0c2c3a15e5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_73d9c146169c53a78d80f2d0584f76048796ffe0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_8b320ab29176935569c93eea06eed5dfe1a551ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_99f2757f3321adabd8f51963ea04a0df1d5151b8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_2109fc6f7bf82a18b1e14b04229e8c00bd3dca85\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.2\f1bc476cc167b18e66c297df599b2377131a8947\gson-2.6.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.6.2_e9be86df608923c407cb9e9da66fb33d38f31a16\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_c53df732237a24274298dead08e30415a6cbe665\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.uwetrottmann.photoview\library\1.2.4\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3b3e0809640a1faa9c42cb7241576af92cf01a2a">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.uwetrottmann.photoview-library-1.2.4_0d941c593307bd8c81a965e8bda0564cd4e51bbf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="bc36e35b15ac1dbd0ba2d9726b5ce7dda22fc92f">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_520a54fce3b434401969910a5d4e85b8aac516e1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_a47a4e2bea163369f91b42205741fa8a16f6bce0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_b8503c902c2cab21c2cb5cbe73cb11b0d2126b3d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_38f71aa6784fe80985d1f70f893bba4472796e26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_cdcacfb9073a7656a25fe90c95b1dbffa3137372\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_4a5af6d47deab50dbfbd3d1cd33726380b21b53e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.yalantis\contextmenu\1.0.7\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a751094b3149197fc97f509127ec65ed2329350f">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.yalantis-contextmenu-1.0.7_b6878c8ca15ed38af327fbd444bfa44c76ab4847\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_7d5fd9f8acb32e237ce20bfad3c13063f3fbbb22\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_91bb24748b9ee942a4fea565f5b7269fafbc59bb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_14eeb10d9be422ca322c5825bc5b5b9ba0729b6d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="32e95946acc63641bea005b289ed03953715fa74">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_aaee1c8a51d4519c66233fa6681a5c1c6106a4ab\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_f4500745cb3675efbc11518dd1058635456b69b0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_bc0b98fadd73b939dddcecbe2a1ca95855b62104\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_4a03c60aaf095ac53326290eb1e95e4c4c0a2cae\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\org.xutils\xutils\3.3.36\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a525a7f2e266f577629f68820a462a807c66eec7">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\org.xutils-xutils-3.3.36_b48bdcdfdd3623d4c5493efada36c3422eb08490\classes.dex" />
+    </item>
+
+</items>

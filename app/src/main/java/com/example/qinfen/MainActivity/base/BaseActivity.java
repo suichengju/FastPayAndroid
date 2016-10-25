@@ -43,7 +43,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         iv_add = (ImageView) rootView.findViewById(R.id.iv_add);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
-        toolbar.setNavigationIcon(R.drawable.icon_back);
+        toolbar.setNavigationIcon(R.drawable.top_back_selector);
     }
 
     @Override
@@ -54,8 +54,8 @@ public abstract class BaseActivity extends AppCompatActivity {
                 LinearLayout.LayoutParams.MATCH_PARENT);
         super.setContentView(rootView);
         init();
-        initset();
         loadDatas();
+        initset();
     }
 
     @Override
@@ -119,7 +119,7 @@ public abstract class BaseActivity extends AppCompatActivity {
      */
     public void setBackEnable(boolean backEnable) {
         if (backEnable) {
-            toolbar.setNavigationIcon(R.drawable.icon_back);
+            toolbar.setNavigationIcon(R.drawable.top_back_selector);
         } else {
             toolbar.setNavigationIcon(null);
         }
@@ -162,6 +162,10 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     public void setRightListener(View.OnClickListener l) {
         iv_add.setOnClickListener(l);
+    }
+
+    public ImageView getRightView(){
+        return iv_add;
     }
 
 

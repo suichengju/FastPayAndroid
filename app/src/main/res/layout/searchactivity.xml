@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@+id/tv_search"
+            android:background="@drawable/add_search_edittext_selector"
+            android:drawableLeft="@drawable/search_bar_hint"
+            android:hint="搜索会员卡号/手机号/姓名"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="16dp" />
+
+        <ImageButton
+            android:id="@+id/ib_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_search"
+            android:background="@drawable/btn_clear"
+            android:paddingRight="20dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="取消"
+            android:textColor="@color/red" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_peron"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.5dp" />
+</LinearLayout>

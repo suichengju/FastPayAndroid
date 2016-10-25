@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/bg_triangle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_square"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/surplusproject_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/white_selector"
+            android:drawableLeft="@drawable/icon_mem_surplus"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="剩余项目"
+            android:textColor="@color/text_vipset_selector"
+            android:textSize="15sp" />
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/xiaofei_TV"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/white_selector"
+            android:drawableLeft="@drawable/icon_mem_expensetext"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="消费记录"
+            android:textColor="@color/text_vipset_selector"
+            android:textSize="15sp" />
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/chongzhi_TV"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/white_selector"
+            android:drawableLeft="@drawable/icon_mem_savetext"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="充值记录"
+            android:textColor="@color/text_vipset_selector"
+            android:textSize="15sp" />
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/chongci_TV"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/white_selector"
+            android:drawableLeft="@drawable/icon_mem_numtext"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="充次记录"
+            android:textColor="@color/text_vipset_selector"
+            android:textSize="15sp" />
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/jifen_TV"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/white_selector"
+            android:drawableLeft="@drawable/icon_mem_integraltext"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="积分记录"
+            android:textColor="@color/text_vipset_selector"
+            android:textSize="15sp" />
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

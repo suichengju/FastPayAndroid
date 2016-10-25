@@ -20,12 +20,22 @@
         <activity
             android:name=".MainActivity.MainActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="adjustNothing"/>
+            android:windowSoftInputMode="adjustNothing" />
 
         <!--登录页-->
         <activity android:name=".MainActivity.ui.LoginActivity" />
         <!--快速消费-->
         <activity android:name=".MainActivity.ui.FastPayActivity" />
+        <!--会员信息-->
+        <activity android:name=".MainActivity.ui.VipUsetDetailsActivity" />
+        <!--会员搜索-->
+        <activity android:name=".MainActivity.ui.SearchActivity" />
+        <!--剩余项目-->
+        <activity android:name=".MainActivity.ui.SurplusProjectActivity" />
+        <!--会员信息记录-->
+        <activity android:name=".MainActivity.ui.RecordActivity" />
+        <!--会员信息记录详情查看-->
+        <activity android:name=".MainActivity.ui.RecordContentActivity" />
 
     </application>
 
