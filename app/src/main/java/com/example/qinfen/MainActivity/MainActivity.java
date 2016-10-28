@@ -13,10 +13,10 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.qinfen.MainActivity.base.BaseActivity;
+import com.example.qinfen.MainActivity.config.FastPayApplication;
 import com.example.qinfen.MainActivity.config.FastPayConstant;
-import com.example.qinfen.MainActivity.config.ParkApplication;
 import com.example.qinfen.MainActivity.ui.LoginActivity;
-import com.example.qinfen.MainActivity.ui.SearchActivity;
+import com.example.qinfen.MainActivity.ui.VipManageUI.SearchActivity;
 import com.example.qinfen.MainActivity.ui.fragment.MainFragMent;
 import com.example.qinfen.MainActivity.ui.fragment.SetingFragMent;
 import com.example.qinfen.MainActivity.ui.fragment.StatisticsFragMent;
@@ -39,12 +39,13 @@ public class MainActivity extends BaseActivity {
     private RadioGroup home_radiogroup;
     private long exitTime = 0;// 双击返回
     private int mPosition;
+    private static boolean falg = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ParkApplication.init(getApplication());
+        FastPayApplication.init(getApplication());
         me = this;
         initmainset();
     }
@@ -106,7 +107,7 @@ public class MainActivity extends BaseActivity {
         home_radiogroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if (MTextUtils.isEmpty(ParkApplication.getToken())) {//判断是否登陆
+                if (MTextUtils.isEmpty(FastPayApplication.getPhone())) {//判断是否登陆
                     int indexOfChild = group.indexOfChild(group.findViewById(checkedId));
                     if (indexOfChild != 0) {
                         setRadioGroup();
@@ -122,36 +123,47 @@ public class MainActivity extends BaseActivity {
         main_VP.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
             }
 
             @Override
             public void onPageSelected(int position) {
-                ((RadioButton) home_radiogroup.getChildAt(position)).setChecked(true);
-                mPosition = position;
-                switch (position) {
-                    case 0:
-                        initmainset();
-                        break;
-                    case 1:
-                        setTitle("会员管理");
-                        setIvAddVisible(true);
-                        setIvAddImage(R.drawable.search_selector);
-                        setRightListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                Intent intent = new Intent(me, SearchActivity.class);
-                                startActivity(intent);
-                            }
-                        });
-                        break;
-                    case 2:
-                        setTitle("统计");
-                        setIvAddVisible(false);
-                        break;
-                    case 3:
-                        setTitle("我");
-                        setIvAddVisible(false);
-                        break;
+                if (MTextUtils.isEmpty(FastPayApplication.getPhone())) {//判断是否登陆
+                    if (falg) {
+                        falg = false;
+                        setRadioGroup();
+                        Intent i = new Intent(MainActivity.this, LoginActivity.class);
+                        startActivityForResult(i, FastPayConstant.IS_LOGIN);
+                        main_VP.setCurrentItem(0, true);
+                    }
+                } else {
+                    ((RadioButton) home_radiogroup.getChildAt(position)).setChecked(true);
+                    mPosition = position;
+                    switch (position) {
+                        case 0:
+                            initmainset();
+                            break;
+                        case 1:
+                            setTitle("会员管理");
+                            setIvAddVisible(true);
+                            setIvAddImage(R.drawable.search_selector);
+                            setRightListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    Intent intent = new Intent(me, SearchActivity.class);
+                                    startActivity(intent);
+                                }
+                            });
+                            break;
+                        case 2:
+                            setTitle("统计");
+                            setIvAddVisible(false);
+                            break;
+                        case 3:
+                            setTitle(FastPayApplication.getPhone());
+                            setIvAddVisible(false);
+                            break;
+                    }
                 }
             }
 
@@ -160,6 +172,20 @@ public class MainActivity extends BaseActivity {
 
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == FastPayConstant.IS_LOGIN | requestCode == RESULT_OK) {
+            int tag = data.getIntExtra("flag", -1);
+            if (tag != 2) {
+                falg = true;
+            } else {
+                setRadioGroup();
+            }
+            main_VP.setCurrentItem(0, true);
+        }
     }
 
     public void setRadioGroup() {

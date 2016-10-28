@@ -9,11 +9,14 @@ import android.widget.ListView;
 import com.example.qinfen.MainActivity.base.AbsBaseAdapter;
 import com.example.qinfen.MainActivity.base.BaseFragment;
 import com.example.qinfen.MainActivity.config.FastPayConfig;
-import com.example.qinfen.MainActivity.ui.VipUsetDetailsActivity;
+import com.example.qinfen.MainActivity.model.Mmanage;
+import com.example.qinfen.MainActivity.model.dto.JsonModel;
+import com.example.qinfen.MainActivity.ui.VipManageUI.VipUsetDetailsActivity;
 import com.example.qinfen.MainActivity.utils.LayoutAniMationUtils;
 import com.example.qinfen.MainActivity.widget.NiceSpinner.NiceSpinner;
 import com.example.qinfen.R;
 import com.goodsrc.qynglibrary.http.HttpManager;
+import com.goodsrc.qynglibrary.http.RequestCallBack;
 
 import org.xutils.http.HttpMethod;
 import org.xutils.http.RequestParams;
@@ -107,7 +110,13 @@ public class VipUserFragMent extends BaseFragment {
         String url = FastPayConfig.VIPMANGER.VIPMANGER_USER;
         HttpManager httpManager = new HttpManager.Builder().setHttpMethod(HttpMethod.POST).build();
         RequestParams params = httpManager.params(url);
+        httpManager.request(params, new RequestCallBack<JsonModel>() {
+            @Override
+            public void onSuccess(JsonModel result) {
+                List<Mmanage> jsonArray = result.getJsonArray();
 
+            }
+        });
     }
 
 

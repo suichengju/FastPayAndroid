@@ -336,4 +336,6 @@
     <!-- 黑色 -->
     <color name="textblack">#484848</color>
     <!-- 淡黑色 -->
+    <color name="anhuise">#DBDBDB</color>
+    <!-- 淡黑色 -->
 </resources>

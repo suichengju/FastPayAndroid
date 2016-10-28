@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="180dp"
+        android:background="@drawable/et_ask"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="修改密码"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.example.qinfen.MainActivity.widget.ClearEditText
+            android:id="@+id/et_pass1"
+            android:layout_width="238dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:maxLength="15"
+            android:layout_margin="10dp"
+            android:background="@drawable/et_ask"
+            android:hint="请输入旧密码（6-15位）"
+            android:paddingLeft="5dp"
+            android:textColor="#000"
+            android:inputType="textPassword"
+            android:textSize="13sp" />
+
+        <com.example.qinfen.MainActivity.widget.ClearEditText
+            android:id="@+id/et_pass2"
+            android:layout_width="238dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/et_ask"
+            android:hint="请输入新密码（6-15位）"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:paddingLeft="5dp"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <View style="@style/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_finish"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_selector"
+                android:gravity="center"
+                android:text="放弃修改"
+                android:textColor="@color/bg_textselector3" />
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/line" />
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/white_selector"
+                android:gravity="center"
+                android:text="确定修改"
+                android:textColor="@color/bg_textselector3" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

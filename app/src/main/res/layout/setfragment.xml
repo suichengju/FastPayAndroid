@@ -3,6 +3,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!--<com.goodsrc.qynglibrary.widget.RefreshLayout-->
+    <!--android:id="@+id/swipe_refresh"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -67,6 +72,7 @@
                             android:textSize="13sp" />
 
                         <TextView
+                            android:id="@+id/tv_xianjin"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1"
@@ -100,6 +106,7 @@
                             android:textSize="13sp" />
 
                         <TextView
+                            android:id="@+id/tv_huiyuanka"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1"
@@ -133,6 +140,7 @@
                             android:textSize="13sp" />
 
                         <TextView
+                            android:id="@+id/tv_youhuijuan"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1"
@@ -165,6 +173,7 @@
                             android:textSize="13sp" />
 
                         <TextView
+                            android:id="@+id/tv_pingtai"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1"
@@ -198,6 +207,7 @@
                             android:textSize="15sp" />
 
                         <TextView
+                            android:id="@+id/tv_yinhangka"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1"
@@ -231,6 +241,7 @@
                             android:textSize="13sp" />
 
                         <TextView
+                            android:id="@+id/tv_other"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="1"
@@ -245,11 +256,11 @@
 
 
                 <LinearLayout
-                    android:id="@+id/ll_vip_authentication"
+                    android:id="@+id/ll_xiugaimima"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp">
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/white_selector">
 
                     <TextView
                         style="@style/me_left_text_icon"
@@ -261,14 +272,16 @@
                 <View style="@style/vertical_line_interval" />
 
                 <LinearLayout
+                    android:id="@+id/ll_moreset"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp">
+                    android:background="@drawable/white_selector"
+                    android:paddingLeft="10dp">
 
                     <TextView
                         style="@style/me_left_text_icon"
-                        android:text="更多设置" />
+                        android:text="更多设置"
+                        android:id="@+id/textView6" />
 
                     <TextView style="@style/me_right_text_icon" />
                 </LinearLayout>
@@ -276,10 +289,11 @@
                 <View style="@style/line_horizontal" />
 
                 <LinearLayout
+                    android:id="@+id/ll_usehelp"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp">
+                    android:background="@drawable/white_selector"
+                    android:paddingLeft="10dp">
 
                     <TextView
                         style="@style/me_left_text_icon"
@@ -291,10 +305,11 @@
                 <View style="@style/line_horizontal" />
 
                 <LinearLayout
+                    android:id="@+id/ll_fankui"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp">
+                    android:background="@drawable/white_selector"
+                    android:paddingLeft="10dp">
 
                     <TextView
                         style="@style/me_left_text_icon"
@@ -306,11 +321,13 @@
                 </LinearLayout>
 
                 <View style="@style/line_horizontal" />
+
                 <LinearLayout
+                    android:id="@+id/ll_update"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp">
+                    android:background="@drawable/white_selector"
+                    android:paddingLeft="10dp">
 
                     <TextView
                         style="@style/me_left_text_icon"
@@ -318,8 +335,8 @@
 
                     <TextView
                         style="@style/me_right_text_icon"
-                        android:gravity="center_vertical|right"
                         android:drawablePadding="5dp"
+                        android:gravity="center_vertical|right"
                         android:text="当前版本V1.0"
                         android:textSize="13sp" />
                 </LinearLayout>
@@ -327,10 +344,11 @@
                 <View style="@style/line_horizontal" />
 
                 <LinearLayout
+                    android:id="@+id/ll_guanyuwomen"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp">
+                    android:background="@drawable/white_selector"
+                    android:paddingLeft="10dp">
 
                     <TextView
                         style="@style/me_left_text_icon"
@@ -342,10 +360,11 @@
                 <View style="@style/vertical_line_interval" />
 
                 <LinearLayout
+                    android:id="@+id/ll_tools"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp">
+                    android:background="@drawable/white_selector"
+                    android:paddingLeft="10dp">
 
                     <TextView
                         style="@style/me_left_text_icon"
@@ -354,26 +373,15 @@
                     <TextView style="@style/me_right_text_icon" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="44dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp">
-
-                    <TextView
-                        style="@style/me_left_text_icon"
-                        android:text="商学院" />
-
-                    <TextView style="@style/me_right_text_icon" />
-                </LinearLayout>
 
                 <View style="@style/vertical_line_interval" />
 
                 <LinearLayout
+                    android:id="@+id/ll_shard"
                     android:layout_width="match_parent"
                     android:layout_height="44dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginStart="10dp">
+                    android:background="@drawable/white_selector"
+                    android:paddingLeft="10dp">
 
                     <TextView
                         style="@style/me_left_text_icon"
@@ -384,6 +392,7 @@
 
                 <View style="@style/vertical_line_interval" />
             </LinearLayout>
+
             <Button
                 android:id="@+id/btn_cancel"
                 style="@style/Button"
@@ -392,5 +401,5 @@
 
         </LinearLayout>
     </ScrollView>
-
+    <!--</com.goodsrc.qynglibrary.widget.RefreshLayout>-->
 </LinearLayout>

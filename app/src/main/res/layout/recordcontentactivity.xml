@@ -6,7 +6,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -16,7 +17,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@color/dimgrey"
+                android:background="@color/anhuise"
                 android:gravity="center_vertical"
                 android:paddingLeft="10dp"
                 android:text="会员信息"
@@ -33,11 +34,12 @@
                     android:text="会员卡号:" />
 
                 <TextView
+                    android:id="@+id/tv_vipnumber"
                     style="@style/vipcontent_right_text_icon"
                     android:text="1111111" />
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/tv_viplev"
                     style="@style/vipcontent_right_text_icon"
                     android:background="@drawable/ok__selector"
                     android:text="会员默认等级" />
@@ -55,6 +57,7 @@
                     android:text="会员姓名:" />
 
                 <TextView
+                    android:id="@+id/tv_vipname"
                     style="@style/vipcontent_right_text_icon"
                     android:text="fffff" />
 
@@ -72,6 +75,7 @@
                     android:text="手机号:" />
 
                 <TextView
+                    android:id="@+id/tv_phone"
                     style="@style/vipcontent_right_text_icon"
                     android:text="未设置"
                     android:textColor="@color/dodgerblue" />
@@ -90,6 +94,7 @@
                     android:text="交易后余额:" />
 
                 <TextView
+                    android:id="@+id/tv_havemoney"
                     style="@style/vipcontent_right_text_icon"
                     android:text="Ұ0.00" />
 
@@ -107,6 +112,7 @@
                     android:text="交易后积分:" />
 
                 <TextView
+                    android:id="@+id/tv_jifen"
                     style="@style/vipcontent_right_text_icon"
                     android:text="0" />
 
@@ -115,7 +121,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@color/dimgrey"
+                android:background="@color/anhuise"
                 android:gravity="center_vertical"
                 android:paddingLeft="10dp"
                 android:text="订单信息"
@@ -132,13 +138,17 @@
                     android:text="单号:" />
 
                 <TextView
+                    android:id="@+id/tv_danhao"
                     style="@style/vipcontent_right_text_icon"
+                    android:layout_marginLeft="5dp"
                     android:text="161014091704100100001" />
 
                 <TextView
+                    android:id="@+id/tv_copy"
                     style="@style/vipcontent_right_text_icon"
                     android:text="复制单号"
-                    android:textColor="@color/dodgerblue" />
+                    android:textColor="@color/dodgerblue"
+                    android:textSize="13sp" />
 
             </LinearLayout>
 
@@ -154,6 +164,7 @@
                     android:text="操作时间:" />
 
                 <TextView
+                    android:id="@+id/tv_time"
                     style="@style/vipcontent_right_text_icon"
                     android:text="2016-10-14 09：17：17" />
             </LinearLayout>
@@ -170,11 +181,13 @@
                     android:text="门店:" />
 
                 <TextView
+                    android:id="@+id/tv_mendian"
                     style="@style/vipcontent_right_text_icon"
                     android:text="默认门店" />
             </LinearLayout>
 
             <View style="@style/line_horizontal" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="44dp"
@@ -185,6 +198,7 @@
                     android:text="操作员:" />
 
                 <TextView
+                    android:id="@+id/tv_people"
                     style="@style/vipcontent_right_text_icon"
                     android:text="jiajian" />
             </LinearLayout>
@@ -192,7 +206,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@color/dimgrey"
+                android:background="@color/anhuise"
                 android:gravity="center_vertical"
                 android:paddingLeft="10dp"
                 android:text="支付方式"
@@ -205,21 +219,25 @@
                 android:layout_marginLeft="10dp">
 
                 <TextView
+                    android:id="@+id/tv_zhifu"
                     style="@style/vipcontent_left_text_icon"
                     android:layout_width="wrap_content"
+                    android:text="账单Ұ100.00（折后Ұ100.00）"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:text="账单Ұ100.00（折后Ұ100.00）" />
+                    android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tv_shoukuan"
                     style="@style/vipcontent_right_text_icon"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
                     android:gravity="right|center_vertical"
-                    android:text="收款Ұ100.00" />
+                    android:text="收款Ұ100.00"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
             </LinearLayout>
+
+            <View style="@style/line_horizontal" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -229,16 +247,33 @@
                 <TextView
                     style="@style/vipcontent_left_text_icon"
                     android:layout_width="wrap_content"
-                    android:textColor="@color/black"
-                    android:text="现金：" />
+                    android:text="现金："
+                    android:textColor="@color/black" />
 
                 <TextView
                     style="@style/vipcontent_right_text_icon"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:textSize="16sp"
                     android:gravity="right|center_vertical"
-                    android:text="Ұ100.00" />
+                    android:text="Ұ100.00"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_shangpinxiangqing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/anhuise"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="商品信息"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

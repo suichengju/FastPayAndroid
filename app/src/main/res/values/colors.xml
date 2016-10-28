@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#fdfdfe</color>
     <color name="colorPrimaryDark">#000</color>
-    <color name="colorAccent">#00bb9c</color>
+    <color name="colorAccent">#f03221</color>
 
     <!--标题字体色-->
     <color name="title_text">#666666</color>

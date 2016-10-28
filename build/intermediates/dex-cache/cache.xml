@@ -88,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="bc36e35b15ac1dbd0ba2d9726b5ce7dda22fc92f">
+        sha1="f334face870041319e62138b9534f7a1e94ee735">
         <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_520a54fce3b434401969910a5d4e85b8aac516e1\classes.dex" />
     </item>
     <item
@@ -174,21 +174,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="32e95946acc63641bea005b289ed03953715fa74">
-        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_aaee1c8a51d4519c66233fa6681a5c1c6106a4ab\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
         <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_f4500745cb3675efbc11518dd1058635456b69b0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a8d83f9d6fd4594c55fb200ecf30d66b8de6347d">
+        <dex dex="C:\Users\qinfen\Desktop\project\FastPayAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_aaee1c8a51d4519c66233fa6681a5c1c6106a4ab\classes.dex" />
     </item>
     <item
         is-multidex="true"

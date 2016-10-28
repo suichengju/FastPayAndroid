@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:background="@android:color/white">
 
-        <EditText
+        <com.example.qinfen.MainActivity.widget.ClearEditText
             android:id="@+id/et_search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -10,20 +10,18 @@ import org.xutils.x;
 
 /**
  * IM上下文环境
- * Created by ZhengChengwei on 2016/6/15.
+ * Created by suichengju on 2016/6/15.
  */
-public class ParkApplication {
+public class FastPayApplication {
     private static Context context;
-    private static String token;
-    private static String phone;
-    private static String deviceid;
+    private static String Phone;
+    private static String password;
     public final static String USER_ShouJiHao = "ShouJiHao";
-    public final static String USER_Duuid = "Duuid";
-    public final static String USER_Token = "Token";
+    public final static String USER_PASS = "PassWord";
     public static MSPUtils sp = null;
 
     public static void init(Application application) {
-        ParkApplication.context = application;
+        FastPayApplication.context = application;
         LibraryApplication.init(application);
         sp = new MSPUtils(application);
         x.Ext.init(application);
@@ -35,29 +33,21 @@ public class ParkApplication {
     }
 
     public static void setPhone(String phone) {
-        ParkApplication.phone = phone;
+        FastPayApplication.Phone = phone;
         sp.setString(USER_ShouJiHao, phone);
     }
 
-    public static String getDeviceid() {
-        return sp.getString(USER_Duuid);
-    }
-
-    public static void setDeviceid(String deviceid) {
-        ParkApplication.deviceid = deviceid;
-        sp.setString(USER_Duuid, deviceid);
-    }
 
     public static Context getContext() {
         return context;
     }
 
-    public static void setToken(String token) {
-        ParkApplication.token = token;
-        LibraryApplication.setToken(token);
+    public static void setPassword(String token) {
+        FastPayApplication.password = token;
+        LibraryApplication.setPhone(token);
     }
 
-    public static String getToken() {
-        return sp.getString(USER_Token);
+    public static String getPassword() {
+        return sp.getString(Phone);
     }
 }

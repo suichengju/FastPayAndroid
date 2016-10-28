@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.qinfen">
 
+
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
     <application
         android:name=".MainActivity.base.BaseApplication"
         android:allowBackup="true"
@@ -25,17 +29,17 @@
         <!--登录页-->
         <activity android:name=".MainActivity.ui.LoginActivity" />
         <!--快速消费-->
-        <activity android:name=".MainActivity.ui.FastPayActivity" />
+        <activity android:name=".MainActivity.ui.VipManageUI.FastPayActivity" />
         <!--会员信息-->
-        <activity android:name=".MainActivity.ui.VipUsetDetailsActivity" />
+        <activity android:name=".MainActivity.ui.VipManageUI.VipUsetDetailsActivity" />
         <!--会员搜索-->
-        <activity android:name=".MainActivity.ui.SearchActivity" />
+        <activity android:name=".MainActivity.ui.VipManageUI.SearchActivity" />
         <!--剩余项目-->
-        <activity android:name=".MainActivity.ui.SurplusProjectActivity" />
+        <activity android:name=".MainActivity.ui.VipManageUI.SurplusProjectActivity" />
         <!--会员信息记录-->
-        <activity android:name=".MainActivity.ui.RecordActivity" />
+        <activity android:name=".MainActivity.ui.VipManageUI.RecordActivity" />
         <!--会员信息记录详情查看-->
-        <activity android:name=".MainActivity.ui.RecordContentActivity" />
+        <activity android:name=".MainActivity.ui.VipManageUI.RecordContentActivity" />
 
     </application>
 

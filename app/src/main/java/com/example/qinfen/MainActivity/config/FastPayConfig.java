@@ -32,6 +32,6 @@ public class FastPayConfig {
 
     /*登录*/
     public static class LOGINS {
-        public static String LOGIN = IP + "/Fycloud/LoginServlet.d6";
+        public static String LOGIN = IP + "Fycloud/LoginServlet.d6";
     }
 }

@@ -8,9 +8,9 @@ import android.widget.GridView;
 import android.widget.SimpleAdapter;
 
 import com.example.qinfen.MainActivity.base.BaseFragment;
+import com.example.qinfen.MainActivity.config.FastPayApplication;
 import com.example.qinfen.MainActivity.config.FastPayConstant;
-import com.example.qinfen.MainActivity.config.ParkApplication;
-import com.example.qinfen.MainActivity.ui.FastPayActivity;
+import com.example.qinfen.MainActivity.ui.VipManageUI.FastPayActivity;
 import com.example.qinfen.MainActivity.ui.LoginActivity;
 import com.example.qinfen.R;
 import com.goodsrc.qynglibrary.utils.MTextUtils;
@@ -72,7 +72,7 @@ public class MainFragMent extends BaseFragment {
         gvMain.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (MTextUtils.isEmpty(ParkApplication.getToken())) {//判断是否登陆
+                if (MTextUtils.isEmpty(FastPayApplication.getPhone())) {//判断是否登陆
                     Intent i = new Intent(getContext(), LoginActivity.class);
                     startActivityForResult(i, FastPayConstant.IS_LOGIN);
                 } else {

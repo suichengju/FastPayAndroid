@@ -1,4 +1,4 @@
-package com.example.qinfen.MainActivity.ui;
+package com.example.qinfen.MainActivity.ui.VipManageUI;
 
 import android.content.Intent;
 import android.os.Bundle;

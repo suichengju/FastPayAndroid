@@ -1,4 +1,4 @@
-package com.example.qinfen.MainActivity.ui;
+package com.example.qinfen.MainActivity.ui.VipManageUI;
 
 import android.os.Bundle;
 import android.widget.ListView;

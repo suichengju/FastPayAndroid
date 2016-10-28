@@ -125,6 +125,16 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     *
+     * @author suichengju
+     * @param l 返回键监听
+     * created at 2016/10/26 13:18
+     */
+    public void setBackListener(View.OnClickListener l) {
+        toolbar.setNavigationOnClickListener(l);
+    }
+
     @Override
     public void setTitle(CharSequence title) {
         titleTv.setText(title);
@@ -164,7 +174,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         iv_add.setOnClickListener(l);
     }
 
-    public ImageView getRightView(){
+    public ImageView getRightView() {
         return iv_add;
     }
 

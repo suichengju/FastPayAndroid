@@ -32,26 +32,26 @@
         <RadioButton
             android:id="@+id/zhuye_rbt"
             style="@style/mainRadioButton"
-            android:drawableTop="@drawable/bank"
+            android:drawableTop="@drawable/main_bottom_rb_zhuye"
             android:checked="true"
             android:text="@string/zhu_ye" />
 
         <RadioButton
             android:id="@+id/cheliang_rbt"
-            android:drawableTop="@drawable/customers"
+            android:drawableTop="@drawable/main_bottom_rb_vip"
             style="@style/mainRadioButton"
             android:text="@string/che_liang" />
 
         <RadioButton
             android:id="@+id/qianbao_rbt"
             style="@style/mainRadioButton"
-            android:drawableTop="@drawable/archives"
+            android:drawableTop="@drawable/main_bottom_rb_tongji"
             android:text="@string/qian_bao" />
 
         <RadioButton
             android:id="@+id/shezhi_rbt"
             style="@style/mainRadioButton"
-            android:drawableTop="@drawable/user"
+            android:drawableTop="@drawable/main_bottom_rb_mine"
             android:text="@string/she_zhi" />
     </RadioGroup>
 </LinearLayout>

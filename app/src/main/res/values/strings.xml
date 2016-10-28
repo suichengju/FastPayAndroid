@@ -4,4 +4,5 @@
     <string name="che_liang">会员</string>
     <string name="qian_bao">统计</string>
     <string name="she_zhi">我的</string>
+    <string name="yijianfankui_hint">有任何问题，都可以在这里提交。\n希望添加什么功能？\n对使用app有什么困惑和不满？\n有什么好的建议？</string>
 </resources>

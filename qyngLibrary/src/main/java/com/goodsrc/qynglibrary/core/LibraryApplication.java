@@ -6,12 +6,12 @@ import com.goodsrc.qynglibrary.utils.MSPUtils;
 
 /**
  *Library上下文环境
- * Created by ZhengChengwei on 2016/6/15.
+ * Created by suichengju on 2016/6/15.
  */
 public class LibraryApplication {
     private static Context context;
-    private static String token;
-    public final static String USER_Token = "Token";
+    private static String Phone;
+    public final static String PHONE = "Phone";
     public static MSPUtils sp = null;
 
     public static void init(Context context) {
@@ -23,12 +23,12 @@ public class LibraryApplication {
         return context;
     }
 
-    public static void setToken(String token) {
-        LibraryApplication.token = token;
-        sp.setString(USER_Token, token);
+    public static void setPhone(String phone) {
+        LibraryApplication.Phone = phone;
+        sp.setString(PHONE, phone);
     }
 
     public static String getToken() {
-        return sp.getString(USER_Token);
+        return sp.getString(PHONE);
     }
 }
